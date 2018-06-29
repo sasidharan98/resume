@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+
+<script type="text/javascript">  // ===== Smooth Scroll   ==== 
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') ==
+this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+<body data-spy="scroll" data-target=".navbar">
+  <!-- Forked from a template on Tutorialzine: https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox -->
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+          </div>
+          <div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                 
+                 <div class="nav navbar-brand " align="left"><i class="fa fa-id-card-o" aria-hidden="true"></i>RESUME</div>                  
+                 <ul class="nav navbar-nav navbar-right">
+                 <li><a  class="ax" href="#section1">Profile</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a  href="#section2">Raspberry pi</a></li>
+                      <li><a  href="#section3">Arduino</a></li>
+                    </ul>
+                  </li>
+                <li><a  class="ax" href="#section4">Skills</a></li>
+                <li><a  class="ax" href="#section5">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>  
+
+  <section class="hero" id="section1">
+      <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>   
+          <img src="assets/img/head.jpg" alt="Flowers" style="width:200px;"  align="left">
+          
+    <div class="hero-content-area">
+      <h1>Sasidharan R</h1>
+      <h3>An passionate teenage  Internet of things devloper and made lots of projects in field of robotics and a UI designer</h3>
+      <a href="#" class="btn">Download Resume</a>
+    </div>
+  </section>
+  
+  <section class="project row-sm-4 id="section2">
+      <div class="background-image" style="background-image: url(assets/img/ccv.jpg);"></div>
+  
+    <h3 class="title">Some of my projects:<br>Raspberry pi</h3>
+  <hr>
+
+    <ul class="grid">
+        
+       <li class="small" > 
+          <img src="assets/img/raspy.jpg" alt="rasp" style ="height:300px" style="width:500px;"  align="left">
+      <p  id="rasp" align="down">
+       <h2>Raspberry pi Home Automation</h2> 
+      </p></li>
+      <li class="small"><img src="assets/img/alexa_raspberry_pi.jpg" alt="alexa"style="height:200px" style="width:500px;"  align="left">
+        <p align="down">
+          <h2>Amazon alexa controlled raspberry pi</h2> 
+        </p></li>
+        </ul>
+        <hr>
+        <h3 class="title"id="section3">Arduino</h3>
+        
+        <ul class="grid">
+      <li class="small" >
+          <img src="assets/img/bluetooth.jpg" alt="bluetooth" style="height:300px;" style:"height:400px" align="left">   
+          <p align="down"><h2>Arduino bluetooth automatic car</h2></p>
+      </li>
+      
+         <li class="small">
+           <img src="assets/img/lan.jpg" alt="lan" style="width:400px;" style="height:400px" align="left">
+           <p align="down">
+             <h2>cloud control using lan port</h2> 
+           </p>
+           </li>
+           
+    </ul>
+  </section>
+
+  <section class="packages row-sm-4" id="section4">
+    <h3 class="title">Skills and Achievement</h3>
+    <ul class="grid" id ="section3">
+      <li>
+        <i class="fa fa-handshake-o fa-4x"></i>
+        <h4>Team Management</h4>
+        <p>Lead as class mentor and did many projects with teammates</p>
+         </li>
+      <li>
+        <i class="fa fa-code fa-4x"></i>
+        <h4>Passionate Coder</h4>
+        <p>Curious to design new Ui and solving challengeable codings</p>
+      </li>
+      <li>
+        <i class="fa fa-bar-chart fa-4x"></i>
+        <h4>Focused on Growth</h4>
+        <p>Growth should always not a single sided always.In all ups and downs i will stay with company</p>
+      </li>
+      <li>
+        <i class="fa fa-clock-o fa-4x"></i>
+        <h4>Time Management</h4>
+        <p>Always focused on projects and finish within deadline as soon as possible</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact row-sm-4" id ="section5" >
+    <h3 class="title">Contact</h3>
+  
+  <h3 class="title">If u want to contact me just leave a message to this mail id.<br>Email Id:Sasi2013dharan@gmail.com
+    </h3>
+  </section>
+  
+  <footer>
+ 
+    <p align="center">END</p>
+   
+  </footer>
+
+</body>
+</html>
